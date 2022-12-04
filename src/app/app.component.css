@@ -1,0 +1,16 @@
+/* .box{
+    width: 600px;
+} */
+
+.peding{
+    color: gray;
+}
+.correct{
+    color: green;
+    font-weight: bold;
+}
+.inCorrect{
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline;
+}

@@ -5,14 +5,17 @@
         Typing Challenge
       </h1>
 
-      <p class="has-test-centered">Randome taxt</p>
+      <p class="has-test-centered">
+        <span [class]="compare(latter , inputText[i])"
+          *ngFor="let latter of randomText.split(''); let i = index">{{latter}}</span>
+      </p>
 
       <div class="field">
-        <input type="text" class="input">
+        <input type="text" class="input is-normal is-rounded mt-5" (input)="onChangeInput($event)">
       </div>
 
-      <div class="box has-text-centered">
-        <h1 class="title">Success!</h1>
+      <div class="box has-text-centered" *ngIf="inputText===randomText">
+        <h1 class="title is-3 has-text-success">Success!</h1>
       </div>
     </div>
   </div>
