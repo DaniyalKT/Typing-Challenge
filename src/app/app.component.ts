@@ -22,5 +22,6 @@ export class AppComponent {
         return 'peding'
       }
       return latterEnter === letterRandom ? 'correct' : 'inCorrect'
+      
   }
 }
